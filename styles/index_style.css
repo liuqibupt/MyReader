@@ -1,0 +1,21 @@
+body{margin:0px;padding:0px;}
+div.logo{
+	margin-left:5%;
+	margin-top: 2%;
+}
+a.logo{
+	text-decoration: none;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 3em;
+	font-weight: 900;
+	color:#996600;
+	padding-bottom: 1px;
+}
+a.logo:hover{
+	border-bottom: 5px solid #cc9966;
+}
+div.category{
+	margin-left:5%;
+	margin-top: 2%;
+}
