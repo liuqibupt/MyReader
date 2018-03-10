@@ -36,7 +36,7 @@ div.main{
 	overflow:auto;
 	height:720px;
 	width:72%;
-	border:solid 1px black;
+	border:solid 0px black;
 }
 div.footer{
 	clear:both;
@@ -107,10 +107,8 @@ p.list{
 		line-height:1.5;
 		text-align:center;
 		cursor:pointer;
-}
-p.list:hover{
-       background-color:#999999;
-	   color:white;
+		background-color:#F0F0F0;
+		color:black;
 }
 p.main{
 	position:absolute;
@@ -135,3 +133,61 @@ div.main1{
 	height:350px;
 	border:solid 0px black;
 }
+div.book_index{
+	float:left;
+	display:none;
+	width:1300px;
+	height:722px;
+	background-color:#cccc66;
+	overflow: auto;
+}
+p.book_title{
+	text-align: center;
+	margin-left:40px;
+	width:auto;
+	height:auto;
+	border:solid 0px black;
+	font-size: 2.5em;
+	font-family: SimSun;
+	line-height: 1.5;
+}
+p.book_author{
+	text-align: center;
+	margin-left:40px;
+	border:solid 0px black;
+	font-size: 1.5em;
+	font-family: SimSun;
+	line-height: 1.5;
+}
+p.book_introduction{
+	text-indent:40px;
+	position:relative;
+	margin-left:100px;
+	width:1100px;
+	border:solid 0px black;
+	font-size:1.3em;
+	line-height: 1.5;
+	font-family:SimSun;
+}
+p.begin_read{
+	width:150px;
+	border: solid 1px black;
+	margin:auto;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding: 10px;
+	text-align: center;
+	background-color: #996600;
+	font-size: 2em;
+	font-family: SimHei;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #666633; 
+}
+a.begin_read{
+	color:white;
+	text-decoration: none;
+}
+a.begin_read:active{
+	color:#6666cc;
+}
+
