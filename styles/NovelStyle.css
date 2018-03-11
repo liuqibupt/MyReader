@@ -110,6 +110,19 @@ p.list{
 		background-color:#F0F0F0;
 		color:black;
 }
+p.list:hover{
+		background-color:#999999;
+		color:white;
+}
+p.NavFocus{
+		font-size:1.5em;
+	    font-family:SimHei;
+		line-height:1.5;
+		text-align:center;
+		cursor:pointer;
+		background-color:#999999;
+		color:white;
+}
 p.main{
 	position:absolute;
 	margin-left:2.5%;
