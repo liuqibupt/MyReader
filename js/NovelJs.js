@@ -1,6 +1,7 @@
 $(document).ready(ReadyFunc);
 function ReadyFunc(){
-$("p.category_first").click(HomeClick);
+$("p.category_novel").click(NovelHomeClick);
+$("p.category_litera").click(LiteraHomeClick);
 $("p.feihu").click(FeihuClick);
 $("p.feihu_logo").click(FeihuClick);
 $("p.xueshan").click(XueshanClick);
@@ -22,147 +23,136 @@ $("p.yitian").click(YitianClick);
 $("p.bixue").click(BixueClick);
 $("p.yuanyang").click(YuanyangClick);
 }
-function HomeClick(){
-	$("div.main").show();
-	$("p.feihu,p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.feihu,p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
-	$("div.feihu_index,div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiaoke_index,div.yitian_index,div.bixue_index,div.yuanyag_index").hide();
+function NovelHomeClick(){
+	location="../novel/IndexNovel.html";
+}
+function LiteraHomeClick(){
+	location="../litera/IndexLitera.html";
 }
 function FeihuClick(){
 	$("div.main").hide();
 	$("p.feihu").removeClass("list");
 	$("p.feihu").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.feihu").siblings().addClass("list");
+    $("p.feihu").siblings().removeClass("NavFocus");
 	$("div.feihu_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
+    $("div.feihu_index").siblings().hide();
 
 }
 function XueshanClick(){
     $("div.main").hide();
 	$("p.xueshan").removeClass("list");
 	$("p.xueshan").addClass("NavFocus");
-    $("p.feihu,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.feihu,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.xueshan").siblings().addClass("list");
+    $("p.xueshan").siblings().removeClass("NavFocus");
 	$("div.xueshan_index").show();
-    $("div.feihu_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
+    $("div.xueshan_index").siblings().hide();
 }
 function LianchengClick(){
     $("div.main").hide();
 	$("p.liancheng").removeClass("list");
 	$("p.liancheng").addClass("NavFocus");
-    $("p.xueshan,p.feihu,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.feihu,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.liancheng").siblings().addClass("list");
+    $("p.liancheng").siblings().removeClass("NavFocus");
 	$("div.liancheng_index").show();
-    $("div.xueshan_index,div.feihu_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
+    $("div.liancheng_index").siblings().hide();
 }
 function TianlongClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.tianlong").removeClass("list");
 	$("p.tianlong").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.feihu,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.feihu,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.tianlong").siblings().addClass("list");
+    $("p.tianlong").siblings().removeClass("NavFocus");
 	$("div.tianlong_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.feihu_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.tianlong_index").siblings().hide();
 }
 function ShediaoClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.shediao").removeClass("list");
 	$("p.shediao").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.feihu,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.feihu,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.shediao").siblings().addClass("list");
+    $("p.shediao").siblings().removeClass("NavFocus");
 	$("div.shediao_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.feihu_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.shediao_index").siblings().hide();
 }
 function BaimaClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.baima").removeClass("list");
 	$("p.baima").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.feihu,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.feihu,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.baima").siblings().addClass("list");
+    $("p.baima").siblings().removeClass("NavFocus");
 	$("div.baima_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.feihu_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.baima_index").siblings().hide();
 }
 function LudingClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.luding").removeClass("list");
 	$("p.luding").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.feihu,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.feihu,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.luding").siblings().addClass("list");
+    $("p.luding").siblings().removeClass("NavFocus");
 	$("div.luding_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.feihu_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.luding_index").siblings().hide();
 }
 function XiaoaoClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.xiaoao").removeClass("list");
 	$("p.xiaoao").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.feihu,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.feihu,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.xiaoao").siblings().addClass("list");
+    $("p.xiaoao").siblings().removeClass("NavFocus");
 	$("div.xiaoao_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.feihu_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.xiaoao_index").siblings().hide();
 }
 function ShujianClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.shujian").removeClass("list");
 	$("p.shujian").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.feihu,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.feihu,p.shendiao,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.shujian").siblings().addClass("list");
+    $("p.shujian").siblings().removeClass("NavFocus");
 	$("div.shujian_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.feihu_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.shujian_index").siblings().hide();
 }
 function ShendiaoClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.shendiao").removeClass("list");
 	$("p.shendiao").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.feihu,p.xiake,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.feihu,p.xiake,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.shendiao").siblings().addClass("list");
+    $("p.shendiao").siblings().removeClass("NavFocus");
 	$("div.shendiao_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.feihu_index,div.xiake_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.shendiao_index").siblings().hide();
 }
 function XiakeClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.xiake").removeClass("list");
 	$("p.xiake").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.feihu,p.yitian,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.feihu,p.yitian,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.xiake").siblings().addClass("list");
+    $("p.xiake").siblings().removeClass("NavFocus");
 	$("div.xiake_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.feihu_index,div.yitian_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.xiake_index").siblings().hide();
 }
 function YitianClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.yitian").removeClass("list");
 	$("p.yitian").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.feihu,p.bixue,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.feihu,p.bixue,p.yuanyang").removeClass("NavFocus");
+    $("p.yitian").siblings().addClass("list");
+    $("p.yitian").siblings().removeClass("NavFocus");
 	$("div.yitian_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.feihu_index,div.bixue_index,div.yuanyang_index").hide();
-
+    $("div.yitian_index").siblings().hide();
 }
 function BixueClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.bixue").removeClass("list");
 	$("p.bixue").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.feihu,p.yuanyang").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.feihu,p.yuanyang").removeClass("NavFocus");
+    $("p.bixue").siblings().addClass("list");
+    $("p.bixue").siblings().removeClass("NavFocus");
 	$("div.bixue_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.feihu_index,div.yuanyang_index").hide();
-
+    $("div.bixue_index").siblings().hide();
 }
 function YuanyangClick(){
-	$("div.main").hide();
+    $("div.main").hide();
 	$("p.yuanyang").removeClass("list");
 	$("p.yuanyang").addClass("NavFocus");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.feihu").addClass("list");
-    $("p.xueshan,p.liancheng,p.tianlong,p.shediao,p.baima,p.luding,p.xiaoao,p.shujian,p.shendiao,p.xiake,p.yitian,p.bixue,p.feihu").removeClass("NavFocus");
+    $("p.yuanyang").siblings().addClass("list");
+    $("p.yuanyang").siblings().removeClass("NavFocus");
 	$("div.yuanyang_index").show();
-    $("div.xueshan_index,div.liancheng_index,div.tianlong_index,div.shediao_index,div.baima_index,div.luding_index,div.xiaoao_index,div.shujian_index,div.shendiao_index,div.xiake_index,div.yitian_index,div.bixue_index,div.feihu_index").hide();
-
+    $("div.yuanyang_index").siblings().hide();
 }
